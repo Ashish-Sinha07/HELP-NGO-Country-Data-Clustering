@@ -31,7 +31,7 @@ child_mort = st.number_input('Child Mortality: Death of children under 5 years o
 
 input_list = [child_mort,exports,health,imports,income,inflation,lf_expcy,fert,gpp]
 
-final_input_list = preprocess.tramsform([input_list])
+final_input_list = preprocess.transform([input_list])
 
 if st.button('Predict'):
     prediction = model.predict(final_input_list)[0]
